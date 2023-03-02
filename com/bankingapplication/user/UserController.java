@@ -10,8 +10,8 @@ import java.util.List;
 class UserController implements UserControllerViewCallBack, UserControllerModelCallBack {
     private UserModelCallBack userModel;
     private UserViewCallBack userView;
-    public UserController(UserViewCallBack loginView) {
-        this.userView = loginView;
+    public UserController(UserViewCallBack UserView) {
+        this.userView = UserView;
         this.userModel =new UserModel(this);
     }
 

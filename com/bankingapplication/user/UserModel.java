@@ -11,8 +11,8 @@ import java.util.List;
 public class UserModel implements UserModelCallBack {
     private UserControllerModelCallBack userController;
     private Repository repository;
-    public UserModel(UserControllerModelCallBack loginController) {
-        this.userController = loginController;repository=Repository.getInstance();
+    public UserModel(UserControllerModelCallBack UserController) {
+        this.userController = UserController;repository=Repository.getInstance();
     }
 
     @Override
